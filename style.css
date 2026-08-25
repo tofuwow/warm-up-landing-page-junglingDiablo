@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1100px;
+    margin: 0 auto;
+    background-color: chartreuse;
+}
+
+/*general: higlight color*/
+body::selection {
+    background: rgb(0, 13, 255);
+    color: yellow;
+}
+
+/*mozzilla: highlight color*/
+body::-moz-selection {
+    background: rgb(0, 13, 255);
+    color: orange;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+}
+
+nav>ul>li {
+    padding: 0 32px;
+}

@@ -1,0 +1,3 @@
+ONE: 
+    - Relative URL: Points to a file within the same website or domain (e.g., src="image.jpg" or src="/images/photo.png"
+    - Absolute URL: Points to a resource hosted on another website or domain (e.g., src="https://www.example.com/image.jpg"). 

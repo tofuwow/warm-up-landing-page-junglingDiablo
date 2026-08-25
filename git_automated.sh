@@ -4,25 +4,20 @@
 # Description: Stage all changes, commit with a provided message, and push.
 # Usage: ./git-quick-commit.sh "Your commit message"
 
-set -e  # Exit immediately if a command fails
+set -e  # Exit immediately if a command fails #SECURITY
 
 # --- Configuration ---
-DEFAULT_MESSAGE="Update"   # Fallback if no message is provided
-REMOTE="origin"            # Remote name (change if needed)
-BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)  # Current branch
+DEFAULT_MESSAGE="Update"   # Fallback if no message is provided #lazy_feauture
 
 # --- Helper function to exit with an error message ---
 die() {
     echo "Error: $1" >&2
-    exit 1
+    exit "Error"
 }
 
 # --- Pre‑flight checks ---
 # 1. Ensure git is installed
 command -v git >/dev/null 2>&1 || die "Git is not installed."
-
-# 2. Ensure we are inside a Git repository
-git rev-parse --is-inside-work-tree >/dev/null 2>&1 || die "Not inside a Git repository."
 
 # --- Determine the commit message ---
 if [ $# -ge 1 ]; then

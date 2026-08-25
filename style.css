@@ -4,8 +4,13 @@
     padding: 0;
 }
 
+
+:root {
+    --value-fixed: 1.6px;
+}
+
 body {
-    width: 1100px;
+    width: 1200px;
     margin: 0 auto;
     background-color: chartreuse;
 }
@@ -22,11 +27,18 @@ body::-moz-selection {
     color: orange;
 }
 
+nav {
+    padding: 12px;
+    font-size: larger;
+}
+
 nav>ul {
     display: flex;
     list-style: none;
+    gap: var(--value-fixed);
 }
 
 nav>ul>li {
     padding: 0 32px;
+    border: var(--value-fixed) solid orangered;
 }

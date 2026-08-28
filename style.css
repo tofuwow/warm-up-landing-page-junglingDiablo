@@ -7,38 +7,56 @@
 
 :root {
     --value-fixed: 1.6px;
+    --violet: #390099;
+    --true-red: #9E0059;
+    --true-red-bright: #FF0054;
+    --orange: #FF5400;
+    --yellow: #FFBD00;
+    --white: rgb(239, 232, 235);
 }
 
 body {
-    width: 1200px;
     margin: 0 auto;
-    background-color: chartreuse;
 }
 
 /*general: higlight color*/
 body::selection {
-    background: rgb(0, 13, 255);
-    color: yellow;
+    background: var(--violet);
+    color: var(--yellow);
 }
 
 /*mozzilla: highlight color*/
 body::-moz-selection {
-    background: rgb(0, 13, 255);
-    color: orange;
+    background: var(--violet);
+    color: var(--yellow);
 }
 
 nav {
-    padding: 12px;
     font-size: larger;
+    background-color: var(--white);
 }
 
 nav>ul {
     display: flex;
     list-style: none;
     gap: var(--value-fixed);
+    padding: 12px;
 }
 
 nav>ul>li {
-    padding: 0 32px;
+    margin: 0.5rem;
+}
+
+nav>ul>li>a {
+    color: var(--orange);
+    text-decoration: none;
+    margin: 0 2rem;
+    padding: 8px 32px;
     border: var(--value-fixed) solid orangered;
+    border-radius: 0.5rem;
+}
+
+nav>ul>li>a:hover {
+    background-color: var(--white);
+    border: var(--value-fixed) solid var(--white);
 }

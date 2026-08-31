@@ -29,22 +29,25 @@ html {
     --small-gap: 0.5rem;
 
     /*COLORS*/
-    --violet: #390099;
+    --violet: #5416c1;
     --true-red: #9E0059;
     --true-red-bright: #FF0054;
     --orange: #FF5400;
     --yellow: #FFBD00;
-    --white: rgb(247, 231, 233);
+    --white: rgb(232, 232, 232);
+    --black: rgb(9, 0, 0);
 }
 
 body {
     font-family: "Okrite";
     font-size: 1.25rem;
-    background-color: var(--white);
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 body>a {
-    color: var(--violet);
     font-size: clamp(1.5rem, 5vw, 3rem);
     display: inline-block;
     padding: 1.5rem 0 1.5rem 1.5rem;
@@ -109,21 +112,21 @@ header>h1 {
 header>p {
     font-size: var(--clamp-start-p-size);
     padding-right: var(--default-gap);
-    color: var(--true-red-bright);
+    color: var(--orange);
     padding-bottom: var(--small-gap);
 }
 
-#disclaimer {
+.disclaimer {
     margin: 0 auto;
     padding: var(--default-gap);
     font-size: 0.7rem;
-    color: var(--orange);
+    color: var(--yellow);
 }
 
 video {
     margin: none;
     width: 270px;
-    height: 135px;
+    height: 540px;
     margin-bottom: var(--default-gap);
 }
 
@@ -138,12 +141,12 @@ aside {
 }
 
 #about>h3 {
-    color: var(--orange);
+    color: var(--violet);
     margin-bottom: var(--default-gap);
 }
 
 #about>p {
-    color: var(--true-red-bright);
+    color: var(--white);
     font-size: var(--clamp-start-p-size);
     padding-right: var(--default-gap);
     padding-bottom: var(--small-gap);
@@ -160,19 +163,20 @@ aside {
 
 #history>h3 {
     margin-bottom: var(--default-gap);
-    color: var(--true-red);
+    color: var(--violet);
 }
 
 #history>p {
-    color: var(--violet);
+    color: var(--white);
     font-size: var(--clamp-start-p-size);
     padding-right: var(--default-gap);
     padding-bottom: var(--small-gap);
 }
 
 #history>ol {
+    margin-top: var(--default-gap);
     font-size: 0.7rem;
-    color: var(--violet);
+    color: var(--yellow);
     padding-left: var(--default-gap);
     padding-right: var(--default-gap);
 }
@@ -182,8 +186,10 @@ aside {
 }
 
 #history>img {
-    width: 270px;
-    height: 270px;
+    width: 175px;
+    height: 175px;
+    margin-left: var(--default-gap);
+    margin-top: var(--default-gap);
     margin-bottom: var(--default-gap);
     background-size: contain;
     border-radius: 50%;
@@ -195,11 +201,11 @@ main {
 
 main>h3 {
     margin-bottom: var(--default-gap);
-    color: var(--true-red);
+    color: var(--violet);
 }
 
 main>p {
-    color: var(--true-red-bright);
+    color: var(--white);
     font-size: var(--clamp-start-p-size);
     padding-right: var(--default-gap);
     padding-bottom: var(--default-gap);
@@ -215,13 +221,13 @@ main>a {
 }
 
 #spark>h3 {
-    color: var(--yellow);
+    color: var(--violet);
     margin-bottom: var(--default-gap);
 }
 
 #spark>p {
     font-size: var(--clamp-start-p-size);
-    color: var(--orange);
+    color: var(--white);
     padding-right: var(--default-gap);
     padding-bottom: var(--default-gap);
 }
@@ -231,12 +237,12 @@ main>a {
 }
 
 #peace>h3 {
-    color: var(--true-red-bright);
+    color: var(--violet);
     margin-bottom: var(--default-gap);
 }
 
 #peace>p {
-    color: var(--true-red);
+    color: var(--white);
     font-size: var(--clamp-start-p-size);
     padding-right: var(--default-gap);
     padding-bottom: var(--default-gap);
@@ -252,9 +258,8 @@ main>a {
 }
 
 #motivation>p {
-    color: var(--true-red);
+    color: var(--white);
     padding-right: var(--default-gap);
-    padding-bottom: var(--default-gap);
     font-size: var(--clamp-start-p-size);
 }
 
@@ -270,17 +275,14 @@ footer>ul>li>a {
 }
 
 footer>h4 {
-    color: var(--orange);
+    
     padding-top: var(--default-gap);
 }
 
 footer>h4,
-footer>h4>a {
+footer>a {
+    color: var(--orange);
     font-size: var(--clamp-start-p-size);
     padding-bottom: var(--default-gap);
     margin-left: var(--default-gap);
-}
-
-footer>h4>a {
-    color: var(--yellow);
 }

@@ -11,7 +11,7 @@
     <title>Jongling diabolo</title>
 </head>
 
-<body id="mobile-first">
+<body id="home">
     <a href="#side-menu" class="open-btn" id="show">
         <i class="fa-solid fa-bars"></i>
     </a>
@@ -20,13 +20,13 @@
             <i class="fa-solid fa-x"></i>
         </a>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About don't doubt!</a></li>
-            <li><a href="">History</a></li>
-            <li><a href="">People</a></li>
-            <li><a href="">Spark</a></li>
-            <li><a href="">Peace in every movement</a></li>
-            <li><a href="">Motivation</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About don't doubt!</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#people">People</a></li>
+            <li><a href="#spark">Spark</a></li>
+            <li><a href="#peace">Peace in every movement</a></li>
+            <li><a href="#motivation">Motivation</a></li>
         </ul>
     </nav>
     <header>
@@ -35,7 +35,7 @@
         <p>Sayed that, something is boiling in the kitchen!</p>
         <p>Let's let the images talk!</p>
         <!--Here we will create a video record in a paralellogramic view!-->
-        <div id="disclaimer">~ muted for safety</div>
+        <div class="disclaimer">~ muted for safety</div>
         <video controls muted>
             <source src="./videos/whiplash.mp4" type="video/mp4">
             <!--Default video error-->
@@ -56,8 +56,9 @@
         <p>Once you arrive on the left foot, you must pick it up, here the <span>magic happens</span>, maintain the left
             hand straight and the right on motion, is like fishing!</p>
         <p>Voilà the magic! The diabolo moves!</p>
-        <video controls>
-            <source src="movie.mp4" type="video/mp4">
+        <div class="disclaimer">~ muted for safety</div>
+        <video controls muted>
+            <source src="./videos/how-to-start.mp4" type="video/mp4">
             <!--Default video error-->
             Your browser does not support the video tag.
         </video>
@@ -100,7 +101,7 @@
         </ol>
         <img src="./pictures/diabolo.jpg" alt="diabolo image">
     </section>
-    <main>
+    <main id="people">
         <h3>People</h3>
         <p>One of my favourite group of performers are the spyrosbros!</p>
         <p>
@@ -118,11 +119,14 @@
     </main>
     <article id="spark">
         <h3>Spark</h3>
-        <p>When I first saw the diabolo in action, I was astonished! I wanted to learn some skills with it. I found out
+        <p>
+            When I first saw the diabolo in action, I was astonished! I wanted to learn some skills with it. I found out
             that the man that was jongling was a teacher in this art. I asked if I can be his student and he sayed yes.
-            That day, around my 12 years old, I started my journey to learn diabolo.</p>
-        <video width="600" height="300" controls>
-            <source src="movie.mp4" type="video/mp4">
+            That day, around my 12 years old, I started my journey to learn diabolo.
+        </p>
+        <div class="disclaimer">~ muted for safety</div>
+        <video controls muted>
+            <source src="videos/speen_tricks_diabolo.mp4" type="video/mp4">
             <!--Default video error-->
             Your browser does not support the video tag.
         </video>
@@ -152,25 +156,24 @@
     </article>
     <footer>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About don't doubt!</a></li>
-            <li><a href="">History</a></li>
-            <li><a href="">People</a></li>
-            <li><a href="">Spark</a></li>
-            <li><a href="">Peace in every movement</a></li>
-            <li><a href="">Motivation</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About don't doubt!</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#people">People</a></li>
+            <li><a href="#spark">Spark</a></li>
+            <li><a href="#peace">Peace in every movement</a></li>
+            <li><a href="#motivation">Motivation</a></li>
         </ul>
         <h4><i class="fa-regular fa-copyright"></i>EMILIAN_CASE_STUDIES_landingPage</h4>
-        <h4>
-            <a href="">
-                Terms and Conditions
-            </a>
-        </h4>
-        <h4>
-            <a href="">
-                Privacy Policy
-            </a>
-        </h4>
+
+        <a href="">
+            Terms and Conditions
+        </a>
+
+        <a href="">
+            Privacy Policy
+        </a>
+
     </footer>
     <script src="script.js"></script>
 </body>

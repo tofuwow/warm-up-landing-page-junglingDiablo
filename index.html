@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Jongling diabolo</title>
 </head>
 
@@ -28,42 +30,51 @@
         </ul>
     </nav>
     <header>
-        <h2>What's jungling diabolo.</h2>
+        <h1>What's jungling diabolo?</h1>
         <p>The jungling diabolo is a circus jungling instrument. Like a tool for a fool! Or maybe not!?</p>
-        <p id="cooking-text" class="how-to-grey">Sayed that, something is boiling in the kitchen!</p>
+        <p>Sayed that, something is boiling in the kitchen!</p>
         <p>Let's let the images talk!</p>
         <!--Here we will create a video record in a paralellogramic view!-->
-        <div id="grey-string" class="how-to-grey">~ muted for safety</div>
-        <video width="600" height="300" controls>
-            <source src="movie.mp4" type="video/mp4">
+        <div id="disclaimer">~ muted for safety</div>
+        <video controls muted>
+            <source src="./videos/whiplash.mp4" type="video/mp4">
             <!--Default video error-->
-            Your browser does not support the video tag.
+            Your browser does not support the video tag.    
         </video>
     </header>
-    <section>
+    <aside>
+        <i class="fa-solid fa-angles-down"></i>
+    </aside>
+    <section id="about">
         <h3>About don't doubt!</h3>
         <p>The junglig diabolo is a circus instrument made by two sticks, a rope that brings together the two sticks,
             and
             the axle.</p>
-        <p>One technique to use the diabolo is by placing the axle in front of the right foot (if you are
+        <p>One technique to start to use the diabolo is by placing the axle in front of the right foot (if you are
             right-handed) and make it roll to the other side using the sticks (the rope must have some pressure because
             of gravity).</p>
         <p>Once you arrive on the left foot, you must pick it up, here the <span>magic happens</span>, maintain the left
             hand straight and the right on motion, is like fishing!</p>
         <p>Voilà the magic! The diabolo moves!</p>
-        <video width="600" height="300" controls>
+        <video controls>
             <source src="movie.mp4" type="video/mp4">
             <!--Default video error-->
             Your browser does not support the video tag.
         </video>
     </section>
-    <section>
+    <section id="history">
         <h3>History</h3>
         <p>
             The Diabolo is derived from the Chinese yo-yo encountered by Europeans during the colonial era. However, the
-            origin of the Chinese yo-yo is unknown. The earliest mention of the Chinese yo-yo is in the late Ming
+            origin of the Chinese yo-yo is unknown.
+        <p>
+            The earliest mention of the Chinese yo-yo is in the late Ming
             dynasty Wanli period (1572–1620), with its details well recorded in the book Dijing Jingwulue by the Liu
-            Tong. The book refers to Chinese yo-yos as "kong zhong" (simplified Chinese: 空钟; traditional Chinese: 空鐘;
+            Tong.
+        </p>
+
+        <p>
+            The book refers to Chinese yo-yos as "kong zhong" (simplified Chinese: 空钟; traditional Chinese: 空鐘;
             pinyin: kōng zhong; lit. 'air bell').
         </p>
         <p>
@@ -87,7 +98,7 @@
                 simplified Chinese: 空钟; traditional Chinese: 空鐘; pinyin: kōngzhōng; lit. 'sky bell'
             </li>
         </ol>
-        <img src="" alt="diabolo image">
+        <img src="./pictures/diabolo.jpg" alt="diabolo image">
     </section>
     <main>
         <h3>People</h3>
@@ -118,10 +129,13 @@
     <article>
         <h3>Peace in every movement</h3>
         <p>
-            The diabolo is a caotic art. We as artists, to be able to learn new skills we must fail! And by fail, I mean failing a lot! To create a harmonic movement we go in a state of mind where we don't lose control of the diabolo. It's a flow state that allows us to build the perfect diabolo trick that you love!!!
+            The diabolo is a caotic art. We as artists, to be able to learn new skills we must fail! And by fail, I mean
+            failing a lot! To create a harmonic movement we go in a state of mind where we don't lose control of the
+            diabolo. It's a flow state that allows us to build the perfect diabolo trick that you love!!!
         </p>
         <p>
-            Now it's time for you to put yourself into the world of the diabolo. Buy one and let's see each other to learn some tricks. 
+            Now it's time for you to put yourself into the world of the diabolo. Buy one and let's see each other to
+            learn some tricks.
         </p>
         <a href="" id="CTA">
             <!--Mail icon-->
@@ -154,7 +168,7 @@
             </a>
         </h4>
     </footer>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

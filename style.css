@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -8,6 +10,15 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: "Brave";
+    src: url("./fonts/brave-font/Brave-DZK0.ttf");
+}
+
+@font-face {
+    font-family: "Okrite";
+    src: url("./fonts/okrite-font/OkriteDemoRegular-YqDav.ttf");
+}
 
 :root {
     --value-fixed: 1.6px;
@@ -19,8 +30,9 @@ html {
     --white: rgb(239, 232, 235);
 }
 
-.pick-a-boo {
-    display: none;
+body {
+    font-family: "Okrite";
+    font-size: 1.25rem;
 }
 
 body>a {
@@ -28,4 +40,34 @@ body>a {
     font-size: clamp(1.5rem, 5vw, 3rem);
     display: inline-block;
     padding: 1.5rem 0 1.5rem 1.5rem;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--violet);
+    color: var(--white);
+    padding: 2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu>ul>li {
+    list-style: none;
+}
+
+.menu>ul>li>a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 1.25rem 0;
+    border: solid 1px var(--yellow);
+    border-radius: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.25rem;
+    font-size: 1rem;
 }

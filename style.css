@@ -23,18 +23,18 @@ html {
 :root {
     /*CLAMPS START*/
     --clamp-start-p-size: 0.8rem;
-    
+
     /*GAPS*/
     --default-gap: 1rem;
     --small-gap: 0.5rem;
-    
+
     /*COLORS*/
     --violet: #390099;
     --true-red: #9E0059;
     --true-red-bright: #FF0054;
     --orange: #FF5400;
     --yellow: #FFBD00;
-    --white: rgb(239, 232, 235);
+    --white: rgb(247, 231, 233);
 }
 
 body {
@@ -158,7 +158,7 @@ aside {
     margin-left: var(--default-gap);
 }
 
-#history>h3{
+#history>h3 {
     margin-bottom: var(--default-gap);
     color: var(--true-red);
 }
@@ -237,6 +237,7 @@ main>a {
 
 #peace>p {
     color: var(--true-red);
+    font-size: var(--clamp-start-p-size);
     padding-right: var(--default-gap);
     padding-bottom: var(--default-gap);
 }
@@ -254,5 +255,32 @@ main>a {
     color: var(--true-red);
     padding-right: var(--default-gap);
     padding-bottom: var(--default-gap);
+    font-size: var(--clamp-start-p-size);
 }
 
+footer>ul>li {
+    padding-bottom: var(--default-gap);
+}
+
+footer>ul>li>a {
+    margin-left: calc(var(--default-gap)*2);
+    color: var(--true-red-bright);
+    padding-right: var(--default-gap);
+    font-size: var(--clamp-start-p-size);
+}
+
+footer>h4 {
+    color: var(--orange);
+    padding-top: var(--default-gap);
+}
+
+footer>h4,
+footer>h4>a {
+    font-size: var(--clamp-start-p-size);
+    padding-bottom: var(--default-gap);
+    margin-left: var(--default-gap);
+}
+
+footer>h4>a {
+    color: var(--yellow);
+}

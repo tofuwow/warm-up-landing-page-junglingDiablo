@@ -55,13 +55,22 @@ body>a {
     transition: transform 0.3s ease-in-out;
 }
 
+.menu>a {
+    color: var(--yellow);
+    padding: 0.5rem;
+}
+
+.menu>ul {
+    margin-top: 2.5rem;
+}
+
 .menu>ul>li {
     list-style: none;
 }
 
 .menu>ul>li>a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--yellow);
     padding: 1.25rem 0;
     border: solid 1px var(--yellow);
     border-radius: 1.75rem;

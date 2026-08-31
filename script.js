@@ -1,12 +1,11 @@
-// This algorithm it is for make uppear the nav
-let anchorShowMenu = document.getElementById("show")
-const show = document.getElementById("side-menu")
+const show = document.getElementById("show")
+const hide = document.getElementById("hide")
+const sideMenu = document.getElementById("side-menu")
 
-anchorShowMenu.addEventListener("click", function() {
-    alert("You clicked")
+show.addEventListener("click", ()=> {
+    sideMenu.style.display = "block"
 })
- 
 
-// This algorithm will pick the nav and show the nav if 
-// the nav riches a certain width
-// or when the hamburger is clicked
+hide.addEventListener("click", ()=> {
+    sideMenu.style.display = "none"
+})

@@ -194,5 +194,65 @@ main {
 }
 
 main>h3 {
-    
+    margin-bottom: var(--default-gap);
+    color: var(--true-red);
 }
+
+main>p {
+    color: var(--true-red-bright);
+    font-size: var(--clamp-start-p-size);
+    padding-right: var(--default-gap);
+    padding-bottom: var(--default-gap);
+}
+
+main>a {
+    color: var(--orange);
+}
+
+#spark {
+    margin-top: var(--default-gap);
+    margin-left: var(--default-gap);
+}
+
+#spark>h3 {
+    color: var(--yellow);
+    margin-bottom: var(--default-gap);
+}
+
+#spark>p {
+    font-size: var(--clamp-start-p-size);
+    color: var(--orange);
+    padding-right: var(--default-gap);
+    padding-bottom: var(--default-gap);
+}
+
+#peace {
+    margin-left: var(--default-gap);
+}
+
+#peace>h3 {
+    color: var(--true-red-bright);
+    margin-bottom: var(--default-gap);
+}
+
+#peace>p {
+    color: var(--true-red);
+    padding-right: var(--default-gap);
+    padding-bottom: var(--default-gap);
+}
+
+#motivation {
+    margin-left: var(--default-gap);
+}
+
+#motivation>h3 {
+    color: var(--violet);
+    margin-bottom: var(--default-gap);
+}
+
+#motivation>p {
+    color: var(--true-red);
+    padding-right: var(--default-gap);
+    padding-bottom: var(--default-gap);
+}
+

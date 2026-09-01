@@ -69,6 +69,7 @@ body>a {
 .menu>a {
     color: var(--violet);
     padding: 0.5rem;
+    cursor: pointer;
 }
 
 .menu>ul {

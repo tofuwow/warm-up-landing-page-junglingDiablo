@@ -29,19 +29,17 @@ html {
     --small-gap: 0.5rem;
 
     /*COLORS*/
-    --violet: #5416c1;
-    --true-red: #9E0059;
-    --true-red-bright: #FF0054;
-    --orange: #FF5400;
-    --yellow: #FFBD00;
-    --white: rgb(232, 232, 232);
-    --black: rgb(9, 0, 0);
+    --blue: #1a98f2;
+    --green: #5fb743;
+    --orange: #fd9800;
+    --yellow: #fde000;
+    --white: #ffffff;
 }
 
 body {
     font-family: "Okrite";
     font-size: 1.25rem;
-    background-color: var(--black);
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -50,7 +48,8 @@ body {
 body>a {
     font-size: clamp(1.5rem, 5vw, 3rem);
     display: inline-block;
-    padding: 1.5rem 0 1.5rem 1.5rem;
+    padding: 1.5rem 0 0.5rem 1.5rem;
+    color: var(--blue);
 }
 
 .menu {
@@ -61,13 +60,13 @@ body>a {
     width: 300px;
     height: 100vh;
     background-color: var(--white);
-    color: var(--white);
+    color: var(--green);
     padding: 2rem;
     transition: transform 0.3s ease-in-out;
 }
 
 .menu>a {
-    color: var(--violet);
+    color: var(--green);
     padding: 0.5rem;
     cursor: pointer;
 }
@@ -82,9 +81,9 @@ body>a {
 
 .menu>ul>li>a {
     text-decoration: none;
-    color: var(--violet);
+    color: var(--green);
     padding: 1.25rem 0;
-    border: solid 1px var(--violet);
+    border: solid 1px var(--green);
     border-radius: 1.75rem;
     display: flex;
     justify-content: center;
@@ -95,7 +94,7 @@ body>a {
 }
 
 #hide {
-    border-bottom: solid 1px var(--violet);
+    border-bottom: solid 1px var(--green);
 }
 
 header {
@@ -103,18 +102,19 @@ header {
 }
 
 h1 {
-    color: var(--true-red);
+    color: var(--green);
 }
 
 header>h1 {
-    margin-bottom: var(--default-gap);
+    margin-bottom: calc(3 * var(--default-gap));
 }
 
 header>p {
     font-size: var(--clamp-start-p-size);
     padding-right: var(--default-gap);
     color: var(--orange);
-    padding-bottom: var(--small-gap);
+    text-shadow: var(--text-shadow);
+    padding-bottom: var(--default-gap);
 }
 
 .disclaimer {
@@ -128,13 +128,6 @@ video {
     margin: none;
     width: 270px;
     height: 540px;
-    margin-bottom: var(--default-gap);
-}
-
-aside {
-    margin-left: var(--default-gap);
-    margin-bottom: var(--default-gap);
-    color: var(--yellow);
 }
 
 #about {
@@ -147,7 +140,7 @@ aside {
 }
 
 #about>p {
-    color: var(--white);
+    color: var(--black);
     font-size: var(--clamp-start-p-size);
     padding-right: var(--default-gap);
     padding-bottom: var(--small-gap);
@@ -168,7 +161,7 @@ aside {
 }
 
 #history>p {
-    color: var(--white);
+    color: var(--black);
     font-size: var(--clamp-start-p-size);
     padding-right: var(--default-gap);
     padding-bottom: var(--small-gap);
@@ -206,7 +199,7 @@ main>h3 {
 }
 
 main>p {
-    color: var(--white);
+    color: var(--black);
     font-size: var(--clamp-start-p-size);
     padding-right: var(--default-gap);
     padding-bottom: var(--default-gap);
@@ -228,7 +221,7 @@ main>a {
 
 #spark>p {
     font-size: var(--clamp-start-p-size);
-    color: var(--white);
+    color: var(--black);
     padding-right: var(--default-gap);
     padding-bottom: var(--default-gap);
 }
@@ -243,7 +236,7 @@ main>a {
 }
 
 #peace>p {
-    color: var(--white);
+    color: var(--black);
     font-size: var(--clamp-start-p-size);
     padding-right: var(--default-gap);
     padding-bottom: var(--default-gap);
@@ -259,7 +252,7 @@ main>a {
 }
 
 #motivation>p {
-    color: var(--white);
+    color: var(--black);
     padding-right: var(--default-gap);
     font-size: var(--clamp-start-p-size);
 }

@@ -21,8 +21,10 @@ html {
 }
 
 :root {
-    /*CLAMPS START*/
+    /*CLAMPS*/
     --clamp-start-p-size: 0.8rem;
+    --clamp-preferred-p-size: 2.5vw;
+    --clamp-end-p-size: 2rem;
 
     /*GAPS*/
     --default-gap: 1rem;
@@ -34,11 +36,16 @@ html {
     --orange: #fd9800;
     --yellow: #fde000;
     --white: #ffffff;
+    --black: black;
+}
+
+.clamp-p {
+    /*After the final difinition of the clamp's values _ delete CLAMPS from root*/
+    font-size: clamp(var(--clamp-start-p-size) var(--clamp-preferred-p-size) var(--clamp-end-p-size));
 }
 
 body {
     font-family: "Okrite";
-    font-size: 1.25rem;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
@@ -110,7 +117,6 @@ header>h1 {
 }
 
 header>p {
-    font-size: var(--clamp-start-p-size);
     padding-right: var(--default-gap);
     color: var(--orange);
     text-shadow: var(--text-shadow);
@@ -135,13 +141,12 @@ video {
 }
 
 #about>h3 {
-    color: var(--violet);
+    color: var(--blue);
     margin-bottom: var(--default-gap);
 }
 
 #about>p {
-    color: var(--black);
-    font-size: var(--clamp-start-p-size);
+    color: var(--green);
     padding-right: var(--default-gap);
     padding-bottom: var(--small-gap);
 }
@@ -157,12 +162,11 @@ video {
 
 #history>h3 {
     margin-bottom: var(--default-gap);
-    color: var(--violet);
+    color: var(--blue);
 }
 
 #history>p {
-    color: var(--black);
-    font-size: var(--clamp-start-p-size);
+    color: var(--green);
     padding-right: var(--default-gap);
     padding-bottom: var(--small-gap);
 }
@@ -170,7 +174,7 @@ video {
 #history>ol {
     margin-top: var(--default-gap);
     font-size: 0.7rem;
-    color: var(--yellow);
+    color: var(--green);
     padding-left: var(--default-gap);
     padding-right: var(--default-gap);
 }
@@ -195,12 +199,11 @@ main {
 
 main>h3 {
     margin-bottom: var(--default-gap);
-    color: var(--violet);
+    color: var(--blue);
 }
 
 main>p {
-    color: var(--black);
-    font-size: var(--clamp-start-p-size);
+    color: var(--green);
     padding-right: var(--default-gap);
     padding-bottom: var(--default-gap);
 }
@@ -215,13 +218,12 @@ main>a {
 }
 
 #spark>h3 {
-    color: var(--violet);
+    color: var(--blue);
     margin-bottom: var(--default-gap);
 }
 
 #spark>p {
-    font-size: var(--clamp-start-p-size);
-    color: var(--black);
+    color: var(--green);
     padding-right: var(--default-gap);
     padding-bottom: var(--default-gap);
 }
@@ -231,13 +233,12 @@ main>a {
 }
 
 #peace>h3 {
-    color: var(--violet);
+    color: var(--blue);
     margin-bottom: var(--default-gap);
 }
 
 #peace>p {
-    color: var(--black);
-    font-size: var(--clamp-start-p-size);
+    color: var(--green);
     padding-right: var(--default-gap);
     padding-bottom: var(--default-gap);
 }
@@ -247,14 +248,13 @@ main>a {
 }
 
 #motivation>h3 {
-    color: var(--violet);
+    color: var(--blue);
     margin-bottom: var(--default-gap);
 }
 
 #motivation>p {
-    color: var(--black);
+    color: var(--green);
     padding-right: var(--default-gap);
-    font-size: var(--clamp-start-p-size);
 }
 
 footer>ul>li {
@@ -263,7 +263,7 @@ footer>ul>li {
 
 footer>ul>li>a {
     margin-left: calc(var(--default-gap)*2);
-    color: var(--true-red-bright);
+    color: var(--blue);
     padding-right: var(--default-gap);
     font-size: var(--clamp-start-p-size);
 }
@@ -280,3 +280,9 @@ footer>a {
     padding-bottom: var(--default-gap);
     margin-left: var(--default-gap);
 }
+
+/*
+    Improvements: 
+        - global spacing criteria (class)
+        - font size criteria (:root)
+*/

@@ -52,6 +52,10 @@ body {
     gap: 3rem;
 }
 
+p {
+    color: var(--orange);
+}
+
 body>a {
     font-size: clamp(1.5rem, 5vw, 3rem);
     display: inline-block;
@@ -104,6 +108,10 @@ body>a {
     border-bottom: solid 1px var(--green);
 }
 
+#desktop {
+    display: none;
+}
+
 header {
     margin-left: var(--default-gap);
 }
@@ -118,7 +126,6 @@ header>h1 {
 
 header>p {
     padding-right: var(--default-gap);
-    color: var(--orange);
     text-shadow: var(--text-shadow);
     padding-bottom: var(--default-gap);
 }
@@ -146,7 +153,6 @@ video {
 }
 
 #about>p {
-    color: var(--green);
     padding-right: var(--default-gap);
     padding-bottom: var(--small-gap);
 }
@@ -166,7 +172,6 @@ video {
 }
 
 #history>p {
-    color: var(--green);
     padding-right: var(--default-gap);
     padding-bottom: var(--small-gap);
 }
@@ -203,7 +208,6 @@ main>h3 {
 }
 
 main>p {
-    color: var(--green);
     padding-right: var(--default-gap);
     padding-bottom: var(--default-gap);
 }
@@ -223,7 +227,6 @@ main>a {
 }
 
 #spark>p {
-    color: var(--green);
     padding-right: var(--default-gap);
     padding-bottom: var(--default-gap);
 }
@@ -238,7 +241,6 @@ main>a {
 }
 
 #peace>p {
-    color: var(--green);
     padding-right: var(--default-gap);
     padding-bottom: var(--default-gap);
 }
@@ -253,7 +255,6 @@ main>a {
 }
 
 #motivation>p {
-    color: var(--green);
     padding-right: var(--default-gap);
 }
 
@@ -286,3 +287,35 @@ footer>a {
         - global spacing criteria (class)
         - font size criteria (:root)
 */
+
+@media only screen and (min-width: 900px) {
+    
+    #desktop {
+        display: block;
+    }
+
+    #desktop>ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin-top: 2rem;
+    }
+
+    #desktop>ul>li>a {
+        padding: 1rem;
+        text-decoration: none;
+        color: var(--blue);
+    }
+    
+    #show{
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

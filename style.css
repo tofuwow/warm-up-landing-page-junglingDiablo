@@ -21,14 +21,6 @@ html {
 }
 
 :root {
-    /*CLAMPS*/
-    --clamp-start-p-size: 0.8rem;
-    --clamp-preferred-p-size: 2.5vw;
-    --clamp-end-p-size: 2rem;
-
-    /*GAPS*/
-    --default-gap: 1rem;
-    --small-gap: 0.5rem;
 
     /*COLORS*/
     --blue: #1a98f2;
@@ -39,17 +31,12 @@ html {
     --black: black;
 }
 
-.clamp-p {
-    /*After the final difinition of the clamp's values _ delete CLAMPS from root*/
-    font-size: clamp(var(--clamp-start-p-size) var(--clamp-preferred-p-size) var(--clamp-end-p-size));
-}
-
 body {
     font-family: "Okrite";
     background-color: var(--white);
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    font-size: clamp(0.8rem, 2.5vw, 1.8rem);
 }
 
 p {
@@ -57,9 +44,8 @@ p {
 }
 
 body>a {
-    font-size: clamp(1.5rem, 5vw, 3rem);
+    /*insert ! this font-size in the media queries*/
     display: inline-block;
-    padding: 1.5rem 0 0.5rem 1.5rem;
     color: var(--blue);
 }
 
@@ -72,18 +58,15 @@ body>a {
     height: 100vh;
     background-color: var(--white);
     color: var(--green);
-    padding: 2rem;
     transition: transform 0.3s ease-in-out;
 }
 
 .menu>a {
     color: var(--green);
-    padding: 0.5rem;
     cursor: pointer;
 }
 
 .menu>ul {
-    margin-top: 2.5rem;
 }
 
 .menu>ul>li {
@@ -93,14 +76,11 @@ body>a {
 .menu>ul>li>a {
     text-decoration: none;
     color: var(--green);
-    padding: 1.25rem 0;
     border: solid 1px var(--green);
     border-radius: 1.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0.25rem;
-    font-size: var(--default-gap);
     background-color: var(--white);
 }
 
@@ -112,39 +92,18 @@ body>a {
     display: none;
 }
 
-header {
-    margin-left: var(--default-gap);
-}
-
 h1 {
     color: var(--green);
 }
 
-header>h1 {
-    margin-bottom: calc(3 * var(--default-gap));
-}
-
-header>p {
-    padding-right: var(--default-gap);
-    text-shadow: var(--text-shadow);
-    padding-bottom: var(--default-gap);
-}
-
 .disclaimer {
-    margin: 0 auto;
-    padding: var(--default-gap);
     font-size: 0.7rem;
     color: var(--yellow);
 }
 
 video {
-    margin: none;
     width: 270px;
     height: 540px;
-}
-
-#about {
-    margin-left: var(--default-gap);
 }
 
 #about>h3 {
@@ -153,133 +112,78 @@ video {
 }
 
 #about>p {
-    padding-right: var(--default-gap);
-    padding-bottom: var(--small-gap);
-}
 
-#about>p:last-of-type {
-    margin-bottom: var(--default-gap);
-    padding-bottom: none;
-}
-
-#history {
-    margin-left: var(--default-gap);
 }
 
 #history>h3 {
-    margin-bottom: var(--default-gap);
     color: var(--blue);
 }
 
 #history>p {
-    padding-right: var(--default-gap);
-    padding-bottom: var(--small-gap);
 }
 
 #history>ol {
-    margin-top: var(--default-gap);
-    font-size: 0.7rem;
     color: var(--green);
-    padding-left: var(--default-gap);
-    padding-right: var(--default-gap);
 }
 
 #history>ol>li {
-    padding-bottom: var(--small-gap);
 }
 
 #history>img {
     width: 175px;
     height: 175px;
-    margin-left: var(--default-gap);
-    margin-top: var(--default-gap);
-    margin-bottom: var(--default-gap);
     background-size: contain;
     border-radius: 50%;
 }
 
-main {
-    margin-left: var(--default-gap);
-}
-
 main>h3 {
-    margin-bottom: var(--default-gap);
     color: var(--blue);
 }
 
 main>p {
-    padding-right: var(--default-gap);
-    padding-bottom: var(--default-gap);
 }
 
 main>a {
     color: var(--orange);
 }
 
-#spark {
-    margin-top: var(--default-gap);
-    margin-left: var(--default-gap);
-}
-
 #spark>h3 {
     color: var(--blue);
-    margin-bottom: var(--default-gap);
 }
 
 #spark>p {
-    padding-right: var(--default-gap);
-    padding-bottom: var(--default-gap);
-}
 
-#peace {
-    margin-left: var(--default-gap);
 }
 
 #peace>h3 {
     color: var(--blue);
-    margin-bottom: var(--default-gap);
 }
 
 #peace>p {
-    padding-right: var(--default-gap);
-    padding-bottom: var(--default-gap);
-}
 
-#motivation {
-    margin-left: var(--default-gap);
 }
 
 #motivation>h3 {
     color: var(--blue);
-    margin-bottom: var(--default-gap);
 }
 
 #motivation>p {
-    padding-right: var(--default-gap);
 }
 
 footer>ul>li {
-    padding-bottom: var(--default-gap);
 }
 
 footer>ul>li>a {
-    margin-left: calc(var(--default-gap)*2);
     color: var(--blue);
-    padding-right: var(--default-gap);
-    font-size: var(--clamp-start-p-size);
 }
 
 footer>h4 {
     
-    padding-top: var(--default-gap);
 }
 
 footer>h4,
 footer>a {
     color: var(--orange);
-    font-size: var(--clamp-start-p-size);
-    padding-bottom: var(--default-gap);
-    margin-left: var(--default-gap);
 }
 
 /*
@@ -299,7 +203,6 @@ footer>a {
         justify-content: center;
         align-items: center;
         list-style: none;
-        margin-top: 2rem;
     }
 
     #desktop>ul>li>a {

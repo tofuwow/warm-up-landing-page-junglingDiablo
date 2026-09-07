@@ -36,7 +36,7 @@ body {
     background-color: var(--white);
     display: flex;
     flex-direction: column;
-    font-size: clamp(0.8rem, 2.5vw, 1.8rem);
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
 }
 
 p {
@@ -47,6 +47,12 @@ body>a {
     /*insert ! this font-size in the media queries*/
     display: inline-block;
     color: var(--blue);
+    padding: 1.5rem;
+    font-size: 2em;
+}
+
+#side-menu {
+    padding: 1rem;
 }
 
 .menu {
@@ -66,14 +72,13 @@ body>a {
     cursor: pointer;
 }
 
-.menu>ul {
-}
-
 .menu>ul>li {
     list-style: none;
+    margin: 1rem;
 }
 
 .menu>ul>li>a {
+    padding: 0.5rem 0;
     text-decoration: none;
     color: var(--green);
     border: solid 1px var(--green);
@@ -86,14 +91,24 @@ body>a {
 
 #hide {
     border-bottom: solid 1px var(--green);
+    font-size: 2em;
 }
 
 #desktop {
     display: none;
 }
 
+.common-margin {
+    margin: 0 1rem 1rem;
+}
+
+.common-font-size {
+    font-size: 1.6em;
+}
+
 h1 {
     color: var(--green);
+    font-size: 3em;
 }
 
 .disclaimer {
@@ -108,25 +123,14 @@ video {
 
 #about>h3 {
     color: var(--blue);
-    margin-bottom: var(--default-gap);
-}
-
-#about>p {
-
 }
 
 #history>h3 {
     color: var(--blue);
 }
 
-#history>p {
-}
-
 #history>ol {
     color: var(--green);
-}
-
-#history>ol>li {
 }
 
 #history>img {
@@ -140,9 +144,6 @@ main>h3 {
     color: var(--blue);
 }
 
-main>p {
-}
-
 main>a {
     color: var(--orange);
 }
@@ -151,46 +152,22 @@ main>a {
     color: var(--blue);
 }
 
-#spark>p {
-
-}
-
 #peace>h3 {
     color: var(--blue);
-}
-
-#peace>p {
-
 }
 
 #motivation>h3 {
     color: var(--blue);
 }
 
-#motivation>p {
-}
-
-footer>ul>li {
-}
-
 footer>ul>li>a {
     color: var(--blue);
-}
-
-footer>h4 {
-    
 }
 
 footer>h4,
 footer>a {
     color: var(--orange);
 }
-
-/*
-    Improvements: 
-        - global spacing criteria (class)
-        - font size criteria (:root)
-*/
 
 @media only screen and (min-width: 900px) {
     
